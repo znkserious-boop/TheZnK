@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loneliness Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'warm-gray': {
+                50: '#f9f9f9',
+                100: '#f2f2f2',
+                200: '#e5e5e5',
+                300: '#d8d8d8',
+                400: '#ababab',
+                500: '#7f7f7f',
+                600: '#545454',
+                700: '#282828',
+                800: '#1b1b1b',
+                900: '#0e0e0e',
+              },
+              'pastel-blue': {
+                light: '#a7c7e7',
+                DEFAULT: '#72a0c1',
+                dark: '#3c70a4',
+              },
+              'pastel-green': {
+                light: '#b2d8b2',
+                DEFAULT: '#77dd77',
+                dark: '#54a154',
+              },
+              'pastel-yellow': {
+                  light: '#fdfd96',
+                  DEFAULT: '#fcfc62',
+                  dark: '#e0e038'
+              }
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-warm-gray-100 dark:bg-warm-gray-900 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
